@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>App de Notas</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1>App de Notas</h1>
+
+    <div id="nuevaNotaForm" class="mb-4">
+      <input type="text" id="tituloInput" placeholder="Título">
+      <textarea id="contenidoTextarea" placeholder="Contenido"></textarea>
+      <button onclick="agregarNota()">Guardar</button>
+      <button onclick="limpiarCampos()">Limpiar</button>
+    </div>
+
+    <div class="form-row mb-3">
+      <div class="col-md-6">
+        <label for="filtroTexto">Filtrar por texto:</label>
+        <input type="text" class="form-control" id="filtroTexto" oninput="aplicarFiltros()">
+      </div>
+      <div class="col-md-6">
+        <label for="filtroRealizada">Mostrar notas realizadas:</label>
+        <input type="checkbox" id="filtroRealizada" onchange="aplicarFiltros()">
+      </div>
+    </div>
+
+    <div id="contenedorNotas">
+      <!-- Aquí se mostrarán las notas -->
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

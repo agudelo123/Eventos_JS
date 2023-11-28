@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de IMC</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+  <h1 class="text-center mb-4">Calculadora de Índice de Masa Corporal (IMC)</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <input type="number" class="form-control mb-2" id="weight" placeholder="Peso (kg)">
+      <input type="number" class="form-control mb-3" id="height" placeholder="Altura (cm)">
+      <button onclick="calculateBMI()" class="btn btn-primary btn-block mb-3">Calcular</button>
+      <h2 class="text-center mb-4">Tu IMC es: <span id="result"></span></h2>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
